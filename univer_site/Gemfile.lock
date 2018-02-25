@@ -72,7 +72,11 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.3)
+<<<<<<< HEAD
     devise (4.3.0)
+=======
+    devise (4.4.1)
+>>>>>>> ca3f658749befaf0230687843f543114f02bf521
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0, < 5.2)
@@ -142,9 +146,15 @@ GEM
     minitest (5.11.3)
     mongo (2.5.1)
       bson (>= 4.3.0, < 5.0.0)
+<<<<<<< HEAD
     mongoid (6.1.1)
       activemodel (~> 5.0)
       mongo (>= 2.4.1, < 3.0.0)
+=======
+    mongoid (6.3.0)
+      activemodel (~> 5.1)
+      mongo (>= 2.5.0, < 3.0.0)
+>>>>>>> ca3f658749befaf0230687843f543114f02bf521
     mongoid-grid_fs (2.3.0)
       mime-types (>= 1.0, < 4.0)
       mongoid (>= 3.0, < 7.0)
@@ -179,6 +189,12 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+<<<<<<< HEAD
+=======
+    rails-i18n (5.1.0)
+      i18n (>= 0.7, < 2)
+      railties (>= 5.0, < 6)
+>>>>>>> ca3f658749befaf0230687843f543114f02bf521
     rails_admin (1.2.0)
       builder (~> 3.1)
       coffee-rails (~> 4.0)
@@ -193,6 +209,14 @@ GEM
       remotipart (~> 1.3)
       sass-rails (>= 4.0, < 6)
     rails_admin-i18n (1.11.3)
+<<<<<<< HEAD
+=======
+    rails_admin_mongoid_localize_field (0.1.3)
+      haml
+      mongoid (>= 3.0)
+      rails (>= 3.0)
+      rails_admin (>= 0.5)
+>>>>>>> ca3f658749befaf0230687843f543114f02bf521
     railties (5.1.4)
       actionpack (= 5.1.4)
       activesupport (= 5.1.4)
@@ -208,7 +232,11 @@ GEM
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
     ruby_dep (1.5.0)
+<<<<<<< HEAD
     ruby_parser (3.10.1)
+=======
+    ruby_parser (3.11.0)
+>>>>>>> ca3f658749befaf0230687843f543114f02bf521
       sexp_processor (~> 4.9)
     rubyzip (1.2.1)
     sass (3.5.5)
@@ -225,7 +253,14 @@ GEM
     selenium-webdriver (3.9.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2)
+<<<<<<< HEAD
     sexp_processor (4.10.0)
+=======
+    sexp_processor (4.10.1)
+    simple_form (3.5.1)
+      actionpack (> 4, < 5.2)
+      activemodel (> 4, < 5.2)
+>>>>>>> ca3f658749befaf0230687843f543114f02bf521
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -271,18 +306,33 @@ DEPENDENCIES
   capybara (~> 2.13)
   carrierwave-mongoid
   coffee-rails (~> 4.2)
+<<<<<<< HEAD
   devise
+=======
+  devise (~> 4.2)
+>>>>>>> ca3f658749befaf0230687843f543114f02bf521
   haml-rails
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   mini_magick
+<<<<<<< HEAD
   mongoid (~> 6.1.0)
   puma (~> 3.7)
   rails (~> 5.1.4)
   rails_admin (~> 1.2.0)
   rails_admin-i18n
+=======
+  mongoid
+  puma (~> 3.7)
+  rails (~> 5.1.4)
+  rails-i18n
+  rails_admin (~> 1.2.0)
+  rails_admin-i18n
+  rails_admin_mongoid_localize_field (~> 0.1.2)
+>>>>>>> ca3f658749befaf0230687843f543114f02bf521
   sass-rails (~> 5.0)
   selenium-webdriver
+  simple_form
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3
