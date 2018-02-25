@@ -8,6 +8,14 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
+gem 'rails_admin-i18n'
+gem 'mini_magick'
+gem 'rails_admin', '~> 1.2.0'
+gem 'mongoid', '~> 6.1.0'
+gem 'carrierwave-mongoid', require: 'carrierwave/mongoid'
+gem 'haml-rails'
+#gem 'rails_admin_mongoid_localize_field', '~> 0.1.2' 
+gem 'devise'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
