@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 
-  # scope ':locale', locale: /#{I18n.available_locales.join("|")}/ do
-  #   root 'main#index'
-  # end
+  get 'main/index'
+
+  scope ':locale', locale: /#{I18n.available_locales.join("|")}/ do
+    root 'main#index'
+  end
 
   root to: redirect("/#{I18n.default_locale}", status: 302), as: :redirected_root
   devise_for :users
