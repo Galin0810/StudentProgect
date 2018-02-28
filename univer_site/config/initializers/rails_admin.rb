@@ -1,6 +1,9 @@
 RailsAdmin.config do |config|
 
+<<<<<<< HEAD
   ## == Devise ==
+=======
+>>>>>>> eaea661b17ef2fc0b5cdab86c3c7eff8687a37a2
   config.authenticate_with do
     warden.authenticate! scope: :user
   end
@@ -11,10 +14,15 @@ RailsAdmin.config do |config|
       redirect_to main_app.root_path
     end
   end
+<<<<<<< HEAD
 
   config.current_user_method(&:current_user)
 
 
+=======
+  
+  config.current_user_method(&:current_user)
+>>>>>>> eaea661b17ef2fc0b5cdab86c3c7eff8687a37a2
   ### Popular gems integration
 
   ## == Devise ==
