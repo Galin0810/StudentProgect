@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'articles/index'
+
   get 'main/index'
 
   scope ':locale', locale: /#{I18n.available_locales.join("|")}/ do
