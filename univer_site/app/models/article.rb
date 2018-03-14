@@ -3,7 +3,12 @@ class Article
   field :title, type: String
   field :date, type: DateTime
   field :content, type: String
-  has_many :photo
-  has_many :video
-  has_and_belongs_to_many :tag
+
+  embeds_many :photos, cascade_callbacks: true
+  accepts_nested_attributes_for :photos, allow_destroy: true
+
+  embeds_many :videos, cascade_callbacks: true
+  accepts_nested_attributes_for :videos, allow_destroy: true
+
+  has_and_belongs_to_many :tags
 end
