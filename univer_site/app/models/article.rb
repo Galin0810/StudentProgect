@@ -11,4 +11,5 @@ class Article
   accepts_nested_attributes_for :videos, allow_destroy: true
 
   has_and_belongs_to_many :tags
+  validates :title, :date, :content, presence: true
 end
