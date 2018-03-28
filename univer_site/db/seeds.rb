@@ -54,3 +54,14 @@ end
     tags: @tags.sample(2)
   )
 end
+
+# Events
+
+5.times do
+  Event.create!(
+    title: Faker::Company.name,
+    content: Faker::Company.catch_phrase,
+    date: Faker::Time.between(10.days.ago, Date.today, :all),
+    photos: [article_photo, article_photo]
+  )
+end
