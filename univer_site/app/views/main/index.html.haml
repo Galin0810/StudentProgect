@@ -6,8 +6,11 @@
 - @articles.each do |article|
     %h6= article.title
     %p= article.content
-    %p= image_tag(article.photos[0].photo.url)
+    -# %p= image_tag(article.photos[0].photo.url)
     -article.photos.each do |photo|
         = photo.title
-        = photo.photo.url
+        = image_tag photo.photo.url
 
+        
+    - article.videos.each do |video|
+        %iframe{:allowscriptaccess => "always", :allowFullScreen => "true", :frameborder => "0", :height => "430", :src => "http://www.youtube.com/embed/#{video.youtube_link}", :title => "YouTube video player", :width => "640"}
