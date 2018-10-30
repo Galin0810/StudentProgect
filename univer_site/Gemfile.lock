@@ -109,7 +109,11 @@ GEM
     execjs (2.7.0)
     faker (1.8.7)
       i18n (>= 0.7)
+<<<<<<< HEAD
+    ffi (1.9.21)
+=======
     ffi (1.9.23)
+>>>>>>> eaea661b17ef2fc0b5cdab86c3c7eff8687a37a2
     font-awesome-rails (4.7.0.3)
       railties (>= 3.2, < 5.2)
     globalid (0.4.1)
@@ -190,7 +194,11 @@ GEM
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
     parallel (1.12.1)
+<<<<<<< HEAD
+    parser (2.5.0.1)
+=======
     parser (2.5.0.2)
+>>>>>>> eaea661b17ef2fc0b5cdab86c3c7eff8687a37a2
       ast (~> 2.4.0)
     powerpack (0.1.1)
     puma (3.11.2)
@@ -362,4 +370,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.16.0
+   1.16.1

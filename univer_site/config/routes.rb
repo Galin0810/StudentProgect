@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   get 'articles/index'
 
+  root 'main#index'
   get 'main/index'
 
   scope ':locale', locale: /#{I18n.available_locales.join("|")}/ do

@@ -1,3 +1,8 @@
+
+User.delete_all
+
+User.create!(
+  email: 'admin@ukd.eu',
 User.delete_all
 Article.delete_all
 Tag.delete_all
@@ -65,3 +70,5 @@ end
     photos: [article_photo, article_photo]
   )
 end
+)
+)

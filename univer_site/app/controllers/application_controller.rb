@@ -17,5 +17,9 @@ class ApplicationController < ActionController::Base
       root_path
     end
   end
+<<<<<<< HEAD
+    
+=======
 
+>>>>>>> eaea661b17ef2fc0b5cdab86c3c7eff8687a37a2
 end
