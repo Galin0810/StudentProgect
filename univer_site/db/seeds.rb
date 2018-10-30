@@ -34,7 +34,7 @@ end
 
 # Tag
 
-5.times do
+7.times do
   Tag.create!(
     title: Faker::Dune.title
   )
