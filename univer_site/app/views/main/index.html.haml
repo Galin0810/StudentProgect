@@ -1,2 +1,16 @@
-%h1 Main#index
-%p Find me on app/views/main/index.html.haml
+%h1 Main#index ​
+%p Find me in app/views/main/index.html.haml
+%iframe{:allowscriptaccess => "always", :allowFullScreen => "true", :frameborder => "0", :height => "430", :src => "http://www.youtube.com/embed/g0jwm4PQRYU", :title => "YouTube video player", :width => "640"}
+
+%h2 Articles
+- @articles.each do |article|
+    %h6= article.title
+    %p= article.content
+    -# %p= image_tag(article.photos[0].photo.url)
+    -article.photos.each do |photo|
+        = photo.title
+        = image_tag photo.photo.url
+
+        
+    - article.videos.each do |video|
+        %iframe{:allowscriptaccess => "always", :allowFullScreen => "true", :frameborder => "0", :height => "430", :src => "http://www.youtube.com/embed/#{video.youtube_link}", :title => "YouTube video player", :width => "640"}
